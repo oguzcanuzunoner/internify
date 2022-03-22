@@ -1,0 +1,162 @@
+.navv {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow-x: scroll;
+  border-bottom: 1px solid #f6f6f6;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding: 5px;
+}
+.navv::-webkit-scrollbar {
+  display: none;
+}
+.navv > a {
+  display: inline-block;
+  color: #555555;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.active {
+  border-bottom: 2px solid #274dbb;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  color: #555555;
+}
+
+.ellipsis {
+  /* overflow: hidden;
+  white-space: nowrap; */
+  word-wrap: break-word;
+}
+
+.text-mutedd {
+  opacity: 0.5;
+  font-size: small;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  overflow: hidden; /* taşanları gizle */
+  white-space: pre; /* alt satıra hiç inme */
+  text-overflow: ellipsis; /* eğer uzunsa üç nokta koy */
+  text-align: center;
+}
+.price {
+  padding: 15px;
+  margin: 15px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+.free {
+  font-size: small;
+  margin: 5px;
+}
+.button {
+  background-color: #008cba; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.kaydirac {
+  margin: 25px;
+}
+.gorsel {
+  border-radius: 10px;
+  background-color: #fff;
+}
+.swiper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  padding-bottom: 20px;
+}
+
+#alert {
+  visibility: hidden;
+}
+
+#alert.show {
+  visibility: visible; /* Show the snackbar */
+  width: 150px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  background-color: #1c232a;
+  position: relative;
+  top: -55px;
+  right: 0px;
+  z-index: 1;
+  border-radius: 15px;
+}
+.marginleft {
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 992px) {
+  .containerr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navv {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .btn-item {
+    overflow: hidden; /* taşanları gizle */
+    white-space: nowrap; /* alt satıra hiç inme */
+    text-overflow: ellipsis; /* eğer uzunsa üç nokta koy */
+  }
+  .active {
+    background-color: rgba(39, 77, 187, 0.3);
+    border-radius: 5px;
+  }
+}
